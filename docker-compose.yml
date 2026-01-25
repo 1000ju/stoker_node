@@ -36,7 +36,7 @@ services:
       - stocker_network
 
   app:
-    image: ghcr.io/1000ju/stocker_node:latest
+    build: .
     pull_policy: always
     container_name: stocker_app
     restart: always
